@@ -1,0 +1,37 @@
+// GET ALL MATCHES
+GET http://localhost:3000/matches
+
+###
+// GET SPECIFIC MATCH
+GET http://localhost:3000/matches/638a646a2b375df5233b8d18
+
+###
+// POST MATCH
+POST http://localhost:3000/matches
+Content-Type: application/json
+
+{
+    "matchId": "match1",
+    "participants": [],
+    "info": []
+}
+
+###
+// UPDATE MATCH
+PATCH http://localhost:3000/matches/638a646a2b375df5233b8d18
+Content-Type: : application/json
+
+{
+    "matchId": "12341234",
+    "participants": [1,2,3]
+}
+
+###
+// DELETE MATCH
+DELETE http://localhost:3000/matches/638a64552b375df5233b8d16
+
+
+###
+// TEST GET SUMMONER BY NAME
+GET https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/kdurg
+X-Riot-Token: RGAPI-dd895bca-2163-457c-a5a1-87abdcfb05ee
