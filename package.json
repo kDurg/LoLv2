@@ -1,14 +1,15 @@
 {
   "name": "lolstatsv2",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "devStart": "nodemon server.js"
   },
-  "author": "",
+  "author": "Kyle Durigan",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.2.1",
     "express": "^4.18.2",
     "mongoose": "^6.7.5"
   },
